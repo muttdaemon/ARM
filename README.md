@@ -1,2 +1,2 @@
 # ARM
-ARM Deep Drive Training at Microsoft
+ARM Deep Drive Labs at Microsoft
