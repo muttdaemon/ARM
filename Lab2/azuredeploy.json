@@ -16,7 +16,7 @@
         "sku": "Free",
         "skucode": "F1",
         "workerSize": "0",
-        "serverFarmResourceGroup": "[resourceGroup().location]",
+        "serverFarmResourceGroup": "[resourceGroup().name]",
         "subscriptionId": "[subscription().subscriptionId]"
     },
     "resources": [
@@ -26,7 +26,7 @@
             "type": "Microsoft.Web/sites",
             "properties": {
                 "name": "[parameters('appname')]",
-                "serverFarmId": "[concat('/subscriptions/', variables('subscriptionId'),'/resourcegroups/', parameters('serverFarmResourceGroup'), '/providers/Microsoft.Web/serverfarms/', variables('hostingPlanName'))]",
+                "serverFarmId": "[concat('/subscriptions/', variables('subscriptionId'),'/resourcegroups/', variables('serverFarmResourceGroup'), '/providers/Microsoft.Web/serverfarms/', variables('hostingPlanName'))]",
                 "hostingEnvironment": "[variables('hostingEnvironment')]"
             },
             "location": "[resourceGroup().location]",
