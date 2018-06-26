@@ -3,13 +3,18 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
       "adminUsername": {
-        "value": "ghuser"
+        "value": "andrew"
       },
-      "adminPassword": {
-        "value": "GEN-PASSWORD"
+      "adminPassword":  {
+        "reference":  {
+           "keyVault":  {
+             "id":  "/subscriptions/8807d9f1-a323-4343-a89d-faf5bfcba34a/resourceGroups/Lab3/providers/Microsoft.KeyVault/vaults/AndrewBKV"
+             },
+           "secretName":  "ubuntuDefaultPassword"
+        }
       },
       "dnsLabelPrefix": {
-        "value": "GEN-UNIQUE"
+        "value": "andrewblab3vm1"
       }
     }
   }
