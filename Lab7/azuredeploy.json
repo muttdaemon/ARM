@@ -37,6 +37,7 @@
         },
         "keyVaultName": {
             "type": "string",
+            "defaultValue": "AndrewBKV2",
             "metadata": {
                 "description": "Name of the key vault containing the admin password secret."
             }
