@@ -1,20 +1,20 @@
 {
-    "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
-    "contentVersion": "1.0.0.0",
-    "parameters": {
-      "adminUsername": {
-        "value": "andrew"
-      },
-      "adminPassword":  {
-        "reference":  {
-           "keyVault":  {
-             "id":  "/subscriptions/8807d9f1-a323-4343-a89d-faf5bfcba34a/resourceGroups/Lab3/providers/Microsoft.KeyVault/vaults/AndrewBKV"
-             },
-           "secretName":  "ubuntuDefaultPassword"
-        }
-      },
-      "dnsLabelPrefix": {
-        "value": "andrewblab3vm1"
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "adminUsername": {
+      "value": "andrew"
+    },
+    "adminPassword":  {
+      "reference":  {
+         "keyVault":  {
+           "id":  "/subscriptions/8807d9f1-a323-4343-a89d-faf5bfcba34a/resourceGroups/Lab3/providers/Microsoft.KeyVault/vaults/AndrewBKV"
+           },
+         "secretName":  "ubuntuDefaultPassword"
       }
+    },
+    "dnsLabelPrefix": {
+      "value": "andrewblab3vm1"
     }
   }
+}

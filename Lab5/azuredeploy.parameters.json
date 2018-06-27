@@ -19,8 +19,11 @@
       "subnetName": {
           "value": "ubuntuSubnet"
       },
+      "numberofDataDisks" : {
+        "value": "1"
+        },
       "dnsLabelPrefix": {
-        "value": "andrewblab4vm1"
+        "value": "andrewblab5vm1"
     }
   }
 }
