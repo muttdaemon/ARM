@@ -32,7 +32,7 @@
         "adminUsername": {
             "type": "string",
             "metadata": {
-                "description": "Administrator username."
+                "description": "root username."
             }
         },
         "keyVaultName": {
@@ -82,9 +82,9 @@
         }
     },
     "variables": {
-        "keyVaultResourceGroup": "keyVaults",
-        "derivedUri": "[uri(deployment().properties.templateLink.uri, 'vm.json')] ",
-        "vmUri": "https://github.com/muttdaemon/ARM/tree/master/Lab7/vm.json"
+        "keyVaultResourceGroup": "Lab7",
+        "vmUri": "https://raw.githubusercontent.com/muttdaemon/ARM/master/Lab7/azuredeploy.json"
+            
     },
     "resources": [
         {

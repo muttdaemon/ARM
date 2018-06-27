@@ -19,7 +19,7 @@
             "metadata": {
                 "description": "Name for the virtual machine"
             },
-            "defaultValue": "AndrewBUbuntuVm5"
+            "defaultValue": "AndrewBUbuntuVm7"
         },
         "dnsLabelPrefix": {
             "type": "string",

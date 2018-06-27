@@ -9,10 +9,10 @@
       "value": "andrew"
     },
     "keyVaultName": {
-      "value": "AndrewBKV"
+      "value": "AndrewBKV2"
     },
     "secretName": {
-      "value": "ubuntuDefaultPassword"
+      "value": "ubuntuDefaultPassword2"
     },
     "vnetName": {
         "value": "ubuntuVnet"
